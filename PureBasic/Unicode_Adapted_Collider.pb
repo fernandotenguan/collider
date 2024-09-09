@@ -26,7 +26,7 @@ CompilerEndIf
 #alignMemoryGpu=64   
 #LOGFILE=1
 #WINFILE="Found.txt"
-#appver="v1.7.9 (02.12.2021 Random TEST version)"
+#appver="v1.8.0 (09.09.2024) - Beta Jefferson"
 Structure JobSturucture
   *arr
   *NewPointsArr
@@ -6976,12 +6976,12 @@ BSGS4_cuda_quad_htchangeble_v2end:
 EndDataSection
 ; IDE Options = PureBasic 6.10 LTS (Windows - x64)
 ; ExecutableFormat = Console
-; CursorPosition = 780
-; FirstLine = 458
+; CursorPosition = 28
+; FirstLine = 19
 ; Folding = TXAg4Xn3+---e-
 ; EnableThread
 ; EnableXP
-; Executable = Collider179-Jeff.exe
+; Executable = Collider180.exe
 ; DisableDebugger
 ; CommandLine = -h
 ; CompileSourceDirectory
