@@ -1,10 +1,10 @@
-## GPU BSGS Collider v1.7.9
+## GPU BSGS Collider v1.8.1
 #### Cuda (Nvidia card only) and Windows x64
 ![alt text](x64/large-bitcoin-collider.png "Collider")<br />
 Forked from [Etayson/BSGS-cuda](https://github.com/Etayson/BSGS-cuda)<br />
-## Help page: Collider.exe -h
+## Help page: Collider181.exe -h
 ```
-C:\Users\User>Collider.exe -h
+C:\Users\User>Collider181.exe -h
 
 -t       Number of GPU threads, Default 512
 -b       Number of GPU blocks, Default 68
@@ -24,7 +24,7 @@ C:\Users\User>Collider.exe -h
 - RTX 3080 (10 GB) = 2.7 Ekeys/s
 - RTX 2070 ( 8 GB) = 1,7 Ekeys/s
 - 1 Ekeys = 1,000,000,000,000,000,000
-- For GPUs over 8 GB memory try Collider v1.8.0
+- For GPUs over 8 GB memory try Collider v1.8.1
 
 When using 5 or more GPUs, there is a decrease in the overall speed by -30%<br />
 In order not to lose speed, it is better to run window copies for each GPU with the -d 0 or -d 1 parameter ...
@@ -98,7 +98,7 @@ All arrays(Baby, Giant) and hashtable saved to the disk for fast spinup solver n
 After you have the arrays saved, you will need less RAM to launch. <br />
 
 Example range 64 bit:<br />
-Run test: ```Collider.exe -t 512 -b 72 -p 306 -pk 49dccfd96dc5df56487436f5a1b18c4f5d34f65ddb48cb5e0000000000000000 -pke 49dccfd96dc5df56487436f5a1b18c4f5d34f65ddb48cb5effffffffffffffff -w 30 -htsz 28 -pb 03c5bcdd76b64cbbd8212080fe5efa9bf577cdcaac9f5853b216e71723ec3aca19```<br />
+Run test: ```Collider181.exe -t 512 -b 72 -p 306 -pk 49dccfd96dc5df56487436f5a1b18c4f5d34f65ddb48cb5e0000000000000000 -pke 49dccfd96dc5df56487436f5a1b18c4f5d34f65ddb48cb5effffffffffffffff -w 30 -htsz 28 -pb 03c5bcdd76b64cbbd8212080fe5efa9bf577cdcaac9f5853b216e71723ec3aca19```<br />
 
 ## Example work 64 bit range:
 ![alt text](x64/755.jpg "Example work")<br />
@@ -106,15 +106,12 @@ Run test: ```Collider.exe -t 512 -b 72 -p 306 -pk 49dccfd96dc5df56487436f5a1b18c
 
 ## Random mode (-r 120 bit only TEST):
 - Change the parameters for your GPU
-- Run random ```Collider.exe -t 512 -b 72 -p 306 -w 30 -htsz 28 -r 120``` 
+- Run random ```Collider181.exe -t 512 -b 72 -p 306 -w 30 -htsz 28 -r 120``` 
 ## Example work random -r 120:
 ![alt text](x64/120.jpg "Example work")<br />
 
 ## Building
-- To compile the Cpllider you need [Purebasic v5.31](https://www.purebasic.com)
-
-## Donation
-- BTC: bc1qh2mvnf5fujg93mwl8pe688yucaw9sflmwsukz9
+- To compile the Collider you need [Purebasic v5.31](https://www.purebasic.com)
 
 ## __Disclaimer__
 ALL THE CODES, PROGRAM AND INFORMATION ARE FOR EDUCATIONAL PURPOSES ONLY. USE IT AT YOUR OWN RISK. THE DEVELOPER WILL NOT BE RESPONSIBLE FOR ANY LOSS, DAMAGE OR CLAIM ARISING FROM USING THIS PROGRAM.
